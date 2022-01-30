@@ -1,0 +1,74 @@
+CONNECTED(0000017C)
+---
+Certificate chain
+ 0 s:C = AR, ST = Province, L = City, O = NewCompany Name, OU = NewCO, CN = Esteban B
+   i:C = AR, ST = Province, L = City, O = NewCompany Name, OU = NewCO, CN = Esteban B
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDjzCCAnegAwIBAgIEceRR8jANBgkqhkiG9w0BAQsFADBtMQswCQYDVQQGEwJB
+UjERMA8GA1UECBMIUHJvdmluY2UxDTALBgNVBAcTBENpdHkxGDAWBgNVBAoTD05l
+d0NvbXBhbnkgTmFtZTEOMAwGA1UECxMFTmV3Q08xEjAQBgNVBAMTCUVzdGViYW4g
+QjAeFw0yMjAxMzAwMTE1MjRaFw0yMzAxMjUwMTE1MjRaMG0xCzAJBgNVBAYTAkFS
+MREwDwYDVQQIEwhQcm92aW5jZTENMAsGA1UEBxMEQ2l0eTEYMBYGA1UEChMPTmV3
+Q29tcGFueSBOYW1lMQ4wDAYDVQQLEwVOZXdDTzESMBAGA1UEAxMJRXN0ZWJhbiBC
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA18JQXs93vpXJ+mHOU8iA
+XsgQLkg0mYV2FjNK4JR2fIpfAdREEvwM0osd9amfNh8YL2Zf6Msjok1AQeinxu7w
+RhL8a3HVOhk01EyDK/35tDBp1OlGulqhMcUCgpVkvR1EKY66ed9/ffEir8pm7ec4
+Xd8b/HEmu7qgqXsQPwpd+/4l5kywTeB6UJSYpq2zh+8T8iQTZ3zCOfkTgsexT/rb
+Z8YmyMT0G50mqHrtP1N3TeW7QxBkGyJPPxA5rOY0qNZhpQsgsi8Y9uJqtPLEJ9q6
+Hd841iYeF/fVYLh8mYC95CC/POJSKJzpgeIyHABHAL0Xfsg2beXlIXofvpz9ih3S
+4QIDAQABozcwNTAUBgNVHREEDTALgglsb2NhbGhvc3QwHQYDVR0OBBYEFOGu4CIW
+n3wgwiHS2EasqSlI2+tXMA0GCSqGSIb3DQEBCwUAA4IBAQAM827/xLLJcSq3yOlS
+8aIvu3M2QgzBz3+Wto5nQsBsrY6BRBElQj8Za7gokVBn4MCZxBbUkr5SGzYEVBRJ
+Uubx/lC61/hGq5XaLVph5r42CrCFvCnhka5sMAFZEuPilwByzUkXpS9owEG/Eh9d
+dyqvO8Dy0VpPZge0Ugsn8FLb1dj3y9tSyV0R1ePVJLJAup/84VnBm+r+j7eXmjTK
+LyQl4LoYxe2/P2iLMD/Whu5rMnHzUf6ZPaa0A0ywsFBpa3sp35mV+HeL83E7e9kH
+dJ3bzEF+fIxnkJYA00vbimc9TfRpZrhLSJO8gp+dWpJbcn57oOdeXqRQwUNEZoSm
+MCUu
+-----END CERTIFICATE-----
+subject=C = AR, ST = Province, L = City, O = NewCompany Name, OU = NewCO, CN = Esteban B
+
+issuer=C = AR, ST = Province, L = City, O = NewCompany Name, OU = NewCO, CN = Esteban B
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1674 bytes and written 804 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self signed certificate)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 1DA0F66985A6192F5316A6BB79B2FEE181A1ECBD249F8F170E4A57017BED7B9A
+    Session-ID-ctx: 
+    Resumption PSK: 08FE32FADF709553E13FE49ED3286219AB032E9B3773F61810D4003CCCC9A7E47DCDB45A031B70412DDDD2BB82EA514A
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 75 30 7e 3b 1f 0e 36 57-3e 0f b8 da e9 08 a2 16   u0~;..6W>.......
+    0010 - ec 74 e5 67 66 cf 65 dd-92 8b 5f 8d 75 42 d0 61   .t.gf.e..._.uB.a
+
+    Start Time: 1643510748
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
