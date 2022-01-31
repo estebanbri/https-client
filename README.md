@@ -20,3 +20,6 @@ o uno propio que podes crear del TrustStore usando keytool**</ins>
 > Como sabemos RestTemplate es un client http por ende no soporta https por si solo, hay que configurarlo ver AppConfig.class)
 RestTemplate va a necesitar de httpclient (org.apache.httpcomponents) para hacer la parte de validacion de certificado del lado del client.
 Por ende le vas a tener que especificar a httpclient la <ins>**ruta de tu truststore**</ins> y la <ins>**password**</ins>. 
+
+Resultado final de tu app cliente del server ssl haya sido configurado correctamente y seguido todos los pasos :)
+![This is an image](https://github.com/estebanbri/ssl-client/blob/master/resultado.png)    
