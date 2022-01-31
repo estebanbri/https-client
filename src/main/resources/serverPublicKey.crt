@@ -1,0 +1,73 @@
+CONNECTED(00000184)
+---
+Certificate chain
+ 0 s:C = AR, ST = Estado, L = Ciudad, O = localhost, OU = localhost, CN = Esteban
+   i:C = AR, ST = Estado, L = Ciudad, O = localhost, OU = localhost, CN = Esteban
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDhzCCAm+gAwIBAgIEKQlGjDANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJB
+UjEPMA0GA1UECBMGRXN0YWRvMQ8wDQYDVQQHEwZDaXVkYWQxEjAQBgNVBAoTCWxv
+Y2FsaG9zdDESMBAGA1UECxMJbG9jYWxob3N0MRAwDgYDVQQDEwdFc3RlYmFuMB4X
+DTIyMDEzMTE2MzE1NVoXDTIzMDEyNjE2MzE1NVowaTELMAkGA1UEBhMCQVIxDzAN
+BgNVBAgTBkVzdGFkbzEPMA0GA1UEBxMGQ2l1ZGFkMRIwEAYDVQQKEwlsb2NhbGhv
+c3QxEjAQBgNVBAsTCWxvY2FsaG9zdDEQMA4GA1UEAxMHRXN0ZWJhbjCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOI2A1/dnNOyfbh1E1Ys5f+8WG5MBtBu
+Te8Ihd+OhKMmfciS6defuN91vSH2PUj9/l1F/zpz2+V//3Xcxb8MGgd8vtuOTCic
+ayLMBWecpuIHonhpcn6WPz6r8Cazp38nJPb9FJW/4kzgEMK0XpqY1gIRrVO1pc0e
+PsKX/lfPYxfRNJu/xzGTji+r2EoKzbs8g23GqdyLK9o1Hab281XTu4HM4D/Lt/PV
+woh+OZXX4DV3UtVNUtp9lQeRuCuD3d66I0sxSePGS0eyMwmi02CkTer9zSwPmXRS
+t1rA++eHuTtTmG3ptVA8SQESaj9Uu9bJI1SfS08qC7JE6MYeJKf8R6UCAwEAAaM3
+MDUwFAYDVR0RBA0wC4IJbG9jYWxob3N0MB0GA1UdDgQWBBTompTyGqykh8vhkICl
+eaOqY2RxdDANBgkqhkiG9w0BAQsFAAOCAQEAfFxFcsBTRJM4kJ6a7fq/GSHrmCE7
+pVPe7pbRcgvHxt4yVPiLHAUTMbYwWBW5dR21l0edASggAgWnbnQcex4LyL2a7cl9
+MzBw6Rg4/XGi5L0DTt/r5/9zWLySAuc28Uf6ipGcA2UmGxDtfQ0mvHVUMQ7W/za2
+MBk6XCnxOK6NUgHjAOFYYOUO4RBf4NvVxCMXsOPz1uTjQEBb3qEi1yntxbZv0r8O
+/GbModCc7c1apTntvXEkHWIObtf6FwokgDVxQUm/zNWuAyELlHUWRAln1bbfMGhf
+cY/FtlUDLFxtTG1UG/qzxO81aV+s+lx50ctwoajlaWB0R+QiNN3LaxfQ3A==
+-----END CERTIFICATE-----
+subject=C = AR, ST = Estado, L = Ciudad, O = localhost, OU = localhost, CN = Esteban
+
+issuer=C = AR, ST = Estado, L = Ciudad, O = localhost, OU = localhost, CN = Esteban
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1666 bytes and written 804 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self signed certificate)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 09E8BC867BC1FE86B950DBFA4C8F7F895D67C6C456EB39E1A6B7B4FE69342FCF
+    Session-ID-ctx: 
+    Resumption PSK: 9B7E91E82C10B47B11E18C061194D6A9453726E2C0BBC097A38C85FD8583F1F10C0997291A86D372AF223C7788AE288E
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 86400 (seconds)
+    TLS session ticket:
+    0000 - 7d 75 53 55 a2 28 97 c4-cd 1a 09 53 c9 2d ee 7a   }uSU.(.....S.-.z
+    0010 - f4 94 82 e7 40 74 54 f5-55 2b 1b 7e d7 8c ce 8c   ....@tT.U+.~....
+
+    Start Time: 1643647053
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK

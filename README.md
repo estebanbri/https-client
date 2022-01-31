@@ -4,7 +4,7 @@ Proyecto de prueba de creacion de app web spring boot que se comunica via SSL co
 ### Como cliente de un server ssl tenes que seguir los siguientes pasos:
 
 1. <ins>**Extraer/Descargar el certificado ssl del server**</ins>  
-> openssl s_client -connect localhost:8443 2>/dev/null > server-certificate.crt
+> openssl s_client -connect localhost:8443 2>/dev/null > serverPublicKey.crt
 
 > 2>/dev/null silencia los errores si los hubiera al ejecutar el comando  
 >  myKey.crt lo vuelca a ese archivo al certificado extraido del server
@@ -14,7 +14,7 @@ o uno propio que podes crear del TrustStore usando keytool**</ins>
 
 >Para crear un TrustStore myCacerts.jks propio ejecuta el siguiente comando  
 
->keytool -import -v -trustcacerts -alias serverKey -file server-certificate.crt -keystore client-truststore.jks -keypass 123456 -storepass 123456
+> keytool -import -v -trustcacerts -alias serverPublicKey -file serverPublicKey.crt -keystore client-truststore.jks -keypass 123456 -storepass 123456
 
 3. <ins>**Configurar RestTemplate**</ins>
 > Como sabemos RestTemplate es un client http por ende no soporta https por si solo, hay que configurarlo ver AppConfig.class)
