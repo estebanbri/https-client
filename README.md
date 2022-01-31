@@ -22,4 +22,7 @@ RestTemplate va a necesitar de httpclient (org.apache.httpcomponents) para hacer
 Por ende le vas a tener que especificar a httpclient la <ins>**ruta de tu truststore**</ins> y la <ins>**password**</ins>. 
 
 Resultado final de tu app cliente del server ssl haya sido configurado correctamente y seguido todos los pasos :)
-![This is an image](https://github.com/estebanbri/ssl-client/blob/master/resultado.png)    
+![This is an image](https://github.com/estebanbri/ssl-client/blob/master/resultado.png)
+
+Una imagen vale mas que mil palabras:
+![This is an image](https://github.com/estebanbri/https-client/blob/master/truststore-detail.png)
