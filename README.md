@@ -27,3 +27,5 @@ Resultado final de tu app cliente del server ssl haya sido configurado correctam
 <ins>Una imagen vale mas que mil palabras</ins>:  
 Tal como se ve en la imagen, el certificado ssl descargado del server contiene la key publica del mismo. Dicho certificado lo importamos dentro de nuestro TrustStore para que pase a ser un certificado de confianza del cliente. 
 ![This is an image](https://github.com/estebanbri/https-client/blob/master/truststore-detail.png)
+
+Nota: Se esta usando una herramiento KeyStore Explorer que tiene una GUI Grafica para ver contenidos de keystore. Dependiendo del tipo de keystore como este es un truststore unicamente vamos a poder visualizar la key publica del server.
