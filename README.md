@@ -25,4 +25,5 @@ Resultado final de tu app cliente del server ssl haya sido configurado correctam
 ![This is an image](https://github.com/estebanbri/ssl-client/blob/master/resultado.png)
 
 Una imagen vale mas que mil palabras:
+Tal como se ve en la imagen, el certificado ssl descargado del server contiene la key publica del mismo. Dicho certificado lo importamos dentro de nuestro TrustStore para que pase a ser un certificado de confianza del cliente. 
 ![This is an image](https://github.com/estebanbri/https-client/blob/master/truststore-detail.png)
