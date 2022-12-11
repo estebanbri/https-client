@@ -36,5 +36,5 @@ En Java tenemos un KeyStore llamado **JKS** (Java Key Store).
 
 - **CLIENT SIDE**: configuramos un TrustStore, el cual va a almacenar la clave publica del server. Es decir TrustStore(**key publica del server**)
 En Java tenemos dos alternativas para usar como TrustStore:
-&nbsp;1. **Default TrustStore**: utilizando el famoso **cacert**. (se encuentra dentro de /security)
-&nbsp;2. **Custom TrustStore**: utilizando un **JKS configurado como TrustStore**. Es decir utilizamos un jks (que por defecto es un keystore) configurandolo via &nbsp;argumentos  para que sea considerado un truststore asi (keytool -import -v -trustcacerts ...  -keystore client-truststore.jks) como vemos le indicamos a keytool &nbsp;que dicho    client-truststore.jks sea tratado como un TrustStore agradandole -trustcacerts al comando. (Para que la JVM lo use tenes que configurarlo via &nbsp;javax.net.ssl.trustStore  y apuntar a dicho TrustStore JKS custom.
+> 1. **Default TrustStore**: utilizando el famoso **cacert**. (se encuentra dentro de /security)
+> 2. **Custom TrustStore**: utilizando un **JKS configurado como TrustStore**. Es decir utilizamos un jks (que por defecto es un keystore) configurandolo via argumentos  para que sea considerado un truststore asi (keytool -import -v -trustcacerts ...  -keystore client-truststore.jks) como vemos le indicamos a keytool que dicho    client-truststore.jks sea tratado como un TrustStore agradandole -trustcacerts al comando. (Para que la JVM lo use tenes que configurarlo via javax.net.ssl.trustStore  y apuntar a dicho TrustStore JKS custom.
