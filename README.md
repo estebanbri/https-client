@@ -31,10 +31,10 @@ Tal como se ve en la imagen, el certificado ssl descargado del server contiene l
 Nota: Se esta usando una herramiento KeyStore Explorer que tiene una GUI Grafica para ver contenidos de keystore. Dependiendo del tipo de keystore como este es un truststore unicamente vamos a poder visualizar la key publica del server.
 
 ### KeyStore vs Cacert ###
-> SERVER SIDE: configuramos un **KeyStore**, dicho almacen permite guardar en el sv ambas keys. Es decir KeyStore(**key publica + key privada**)
+- SERVER SIDE: configuramos un **KeyStore**, dicho almacen permite guardar en el sv ambas keys. Es decir KeyStore(**key publica + key privada**)
 En Java tenemos un KeyStore llamado **JKS** (Java Key Store).
 
-> CLIENT SIDE: configuramos un TrustStore, el cual va a almacenar la clave publica del server. Es decir TrustStore(**key publica del server**)
+- CLIENT SIDE: configuramos un TrustStore, el cual va a almacenar la clave publica del server. Es decir TrustStore(**key publica del server**)
 En Java tenemos dos alternativas para usar como TrustStore:
 1. **Default TrustStore**: utilizando el famoso **cacert**. (se encuentra dentro de /security)
 2. **Custom TrustStore**: utilizando un **JKS configurado como TrustStore**. Es decir utilizamos un jks (que por defecto es un keystore) configurandolo via argumentos para que sea considerado un truststore asi (keytool -import -v -trustcacerts ...  -keystore client-truststore.jks) como vemos le indicamos a keytool que dicho client-truststore.jks sea tratado como un TrustStore agradandole -trustcacerts al comando. (Para que la JVM lo use tenes que configurarlo via javax.net.ssl.trustStore y apuntar a dicho TrustStore JKS custom.
